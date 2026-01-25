@@ -1,0 +1,111 @@
+.changing-text span{
+	text-transform: uppercase;
+	line-height: 4.0rem;
+	margin-left: 0;
+}
+
+.texts-container{
+    display: inline-block;
+    height: 4.0rem;
+    overflow: hidden;
+	margin-top:15px;
+}
+
+.texts-container span{
+    display: block;
+	    color:var(--dark-red);
+	-webkit-animation-name: moveUp;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: moveUp;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.texts-container span b {
+    text-transform: none;
+    color: #000218;
+}
+@keyframes moveUp {
+    0%, 100%{
+        transform: translateY(-20%);
+    }
+    11.11%{
+        transform: translateY(-40%);
+    }
+
+    22.22%{
+        transform: translateY(-60%);
+    }
+	
+	33.33%{
+        transform: translateY(-80%);
+    }
+
+    44.44%{
+        transform: translateY(-100%);
+    }
+	
+	55.55%{
+        transform: translateY(-80%);
+    }
+	
+	66.66%{
+        transform: translateY(-60%);
+    }
+	
+	77.77%{
+        transform: translateY(-40%);
+    }
+	
+	88.88%{
+        transform: translateY(-20%);
+    }
+	
+}
+
+
+/*@keyframes moveUp{
+    0%{
+        transform: translateY(0);
+    }
+
+    16%{
+        transform: translateY(-20%);
+    }
+
+    32%{
+        transform: translateY(-40%);
+    }
+
+    48%{
+        transform: translateY(-60%);
+    }
+	
+	64%{
+        transform: translateY(-80%);
+    }
+
+    80%{
+        transform: translateY(-100%);
+    }
+	
+	100%{
+        transform: translateY(0%);
+    }
+}*/
+
+
+
+@media(max-width:680px) {
+	.changing-text span {
+    text-transform: uppercase;
+   line-height: 2.6rem;
+    margin-left: 0;
+    font-size: 2.2rem
+}
+.texts-container {
+    height: 2.6rem;
+	    margin-top: 5px;
+}
+
+}
